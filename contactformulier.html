@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Zorgt voor responsive gedrag op mobiele apparaten -->
+  <meta name="description" content="Een veeteelt bedrijf dat focust op bijen.">
+  <!-- Korte beschrijving van de pagina -->
+  <meta name="keywords" content="Bijen, honing, weilanden, bijennesten, volwassenen, imkers.">
+  <!-- Zoekwoorden voor zoekmachines -->
+  <meta name="author" content="imkerij"> <!-- Auteur van de website -->
+  <title>Contact | Imker</title> <!-- Titel die in de browser wordt weergegeven -->
+
+  <!-- Bootstrap CSS bibliotheek voor opmaak -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="contactform.css"> <!-- Externe CSS-bestand -->
+</head>
+
+<body>
+
+  <!-- Navigatiebalk (navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-light position-relative" style="background-color: #ffcd01;">
+    <!-- Grote navbar met gele achtergrond -->
+    <div class="container position-relative w-100"> <!-- Container die de breedte van het scherm benut -->
+
+      <!-- Logo ongeveer in het midden -->
+      <a class="navbar-brand mx-auto position-absolute top-50 start-50 translate-middle" href="#">
+        <!-- Logo word ongeveer midden geplaatst -->
+        <img src="assets/bijenlogo.webp" width="50" height="50" alt="Logo"> <!-- Bijenlogo -->
+      </a>
+
+      <!-- Toggler rechts voor mobiel -->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Knop voor uitklapmenu op mobiel -->
+        <span class="navbar-toggler-icon"></span> <!-- Standaard icoon met drie streepjes -->
+      </button>
+
+      <!-- Navigatielinks helemaal rechts -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <!-- Inklapbaar menu, inhoud naar rechts uitgelijnd -->
+        <ul class="navbar-nav"> <!-- Navigatielijst -->
+          <li class="nav-item"><a class="nav-link" href="landingspagina.html">Home</a></li>
+          <!-- Link naar de landingspagina -->
+          <li class="nav-item"><a class="nav-link" href="overzichtpagina.html">Producten</a></li>
+          <!-- Link naar de overzichtspagina -->
+          <li class="nav-item active">
+            <a class="nav-link" href="contactformulier.html">Contact <span class="sr-only">(huidige)</span></a>
+            <!-- Actieve pagina, 'Contact' gemarkeerd -->
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Container voor contactformulier en informatie -->
+  <div class="container container-contact"> <!-- Bootstrap container met aangepaste klasse -->
+    <div class="row"> <!-- Start van een rij met twee kolommen -->
+      <div class="col-md-6 contact-info"> <!-- Linkerkolom: contactinformatie -->
+        <h2>Neem contact op</h2> <!-- Titel van het contactgedeelte -->
+        <br>
+        <p>
+          Heeft u vragen over onze honing of bijenkasten?<br>
+          Vul dan het formulier in. We nemen spoedig contact met u op.
+        </p>
+        <br><br>
+        <p>
+          📞 <strong>06-12345678</strong><br> <!-- Telefoonnummer -->
+          📧 <strong>info@imkerdemo.nl</strong> <!-- E-mailadres -->
+        </p>
+        <br><br>
+        <p>
+          Bezoek ons in Gelderland en ontdek onze natuurlijke producten. <!-- Adresinformatie -->
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Rechterkolom: contactformulier dit is ook het onderdeel wat de backend developer nodig zal voor zijn onderdeel-->
+        <form> <!-- Start van formulier -->
+          <div class="form-group"> <!-- Formuliergroep voor naam -->
+            <label for="naam">Naam</label> <!-- Label voor naamveld -->
+            <input type="text" class="form-control" id="naam" placeholder="Uw naam"> <!-- Tekstinvoer voor naam -->
+          </div>
+
+          <div class="form-group"> <!-- Formuliergroep voor e-mail -->
+            <label for="email">E-mailadres</label> <!-- Label voor e-mailadres -->
+            <input type="email" class="form-control" id="email" placeholder="Uw e-mailadres">
+            <!-- Invoerveld voor e-mail -->
+          </div>
+
+          <div class="form-group"> <!-- Formuliergroep voor bericht -->
+            <label for="bericht">Bericht</label> <!-- Label voor berichtveld -->
+            <textarea class="form-control" id="bericht" rows="5" placeholder="Uw bericht..."></textarea>
+            <!-- Tekstvak voor bericht -->
+          </div>
+
+          <button type="submit" class="btn">Verstuur bericht</button> <!-- Verzenden-knop -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    &copy; 2025 ImkerDemo. Alle rechten voorbehouden. <!-- Copyright-informatie -->
+  </footer>
+
+  <!-- Bootstrap JavaScript en afhankelijkheden -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery voor Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JavaScript bundel -->
+
+</body>
+
+</html>

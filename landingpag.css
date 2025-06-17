@@ -1,0 +1,84 @@
+body::before {
+    content: "";
+    background-image: url("assets/achtergrondgraten.webp");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9e6;
+      color: #443300;
+    }
+
+    .navbar {
+      background-color: #f4c542;
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: #333 !important;
+    }
+
+    .jumbotron {
+      background-color: #fff3cd;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .btn-honing {
+      background-color: #e0a800;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .btn-honing:hover {
+      background-color: #c49000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #484848;
+      margin-top: 3rem;
+    }
+
+    .jumbotron-met-achtergrond {
+  position: relative;
+  background-image: url("assets/bijenhomepagina.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+  border-radius: 12px;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.jumbotron-met-achtergrond .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Zwarte overlay, 40% dekking */
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.jumbotron-met-achtergrond .content {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Zorgt voor responsive gedrag op mobiele apparaten -->
+  <meta name="description" content="Een veeteelt bedrijf dat focust op bijen.">
+  <!-- Korte beschrijving van de pagina -->
+  <meta name="keywords" content="Bijen, honing, weilanden, bijennesten, volwassenen, imkers.">
+  <!-- Zoekwoorden voor zoekmachines -->
+  <meta name="author" content="imkerij"> <!-- Auteur van de website -->
+  <title>Producten | Imkerij</title> <!-- Titel die in de browser wordt weergegeven -->
+
+  <!-- Bootstrap CSS + CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="overzichtpag.css">
+</head>
+
+<body>
+
+  <!-- Navigatiebalk bovenaan -->
+  <nav class="navbar navbar-expand-lg navbar-light position-relative" style="background-color: #ffcd01;">
+    <div class="container position-relative w-100">
+
+      <!-- Logo ongeveer gecentreerd in het midden van de navbar -->
+      <a class="navbar-brand mx-auto position-absolute top-50 start-50 translate-middle" href="landingspagina.html">
+        <img src="assets/bijenlogo.webp" alt="Logo" width="50" height="50">
+      </a>
+
+      <!-- Menu knop voor mobiele schermen -->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigatielinks (rechts uitgelijnd) -->
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="landingspagina.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Producten</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactformulier.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Inleidende tekst boven het productoverzicht -->
+  <div class="container my-5">
+    <div class="content-wrapper text-center">
+      <h2>Onze Honing & Bijenproducten</h2>
+      <p>Bekijk hier de selectie van onze natuurlijke producten uit eigen bijenkasten.</p>
+    </div>
+
+    <!-- Grid met productkaarten -->
+    <div class="product-grid">
+
+      <!-- Product 1: Lentehoning -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/honing.webp" class="card-img-top" alt="Honingpotje">
+        <div class="card-body">
+          <h5 class="card-title">Lentehoning</h5>
+          <p class="card-text">Zachte, bloemige honing voor op brood of in thee.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> Onze lentehoning is licht en bloemig van smaak, perfect voor ontbijt of thee.</p>
+          <p><strong>Prijs:</strong> €6,95 per pot (250g)</p>
+        </div>
+      </div>
+
+      <!-- Product 2: Honingraat -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/honinggraat.webp" class="card-img-top" alt="Honingraat">
+        <div class="card-body">
+          <h5 class="card-title">Honingraat</h5>
+          <p class="card-text">Rauwe honingraat, direct uit de kast.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> Eetbare raat, rijk aan smaak en perfect bij kaasplankjes.</p>
+          <p><strong>Prijs:</strong> €8,50 per stuk</p>
+        </div>
+      </div>
+
+      <!-- Product 3: Bijenwaskaars -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/bijenwaskaars.webp" class="card-img-top" alt="Bijenwaskaars">
+        <div class="card-body">
+          <h5 class="card-title">Bijenwaskaars</h5>
+          <p class="card-text">Natuurlijk en handgemaakt van bijenwas.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> Gemaakt van pure bijenwas. Brandt schoon en geurloos.</p>
+          <p><strong>Prijs:</strong> €4,50 per stuk</p>
+        </div>
+      </div>
+
+      <!-- Product 4: Boenwas -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/boenwasmethoning.jpeg" class="card-img-top" alt="Boenwas">
+        <div class="card-body">
+          <h5 class="card-title">Boenwas</h5>
+          <p class="card-text">Handig om uw schoenen ermee te boenen.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> Gemaakt met bijenwas en geeft een mooie glans.</p>
+          <p><strong>Prijs:</strong> €5,19</p>
+        </div>
+      </div>
+
+      <!-- Product 5: Bijenkast -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/bijenkast.webp" class="card-img-top" alt="Bijenkorf">
+        <div class="card-body">
+          <h5 class="card-title">Bijenkast</h5>
+          <p class="card-text">Een kast waar bijen honing produceren.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> De kast komt inclusief graten.</p>
+          <p><strong>Prijs:</strong> €149,99</p>
+        </div>
+      </div>
+
+      <!-- Product 6: Imkercursus -->
+      <div class="card" onclick="toggleDetails(this)"> <!--onclick word de rest zichtbaar-->
+        <img src="assets/imkercursus.webp" class="card-img-top" alt="Imker cursus">
+        <div class="card-body">
+          <h5 class="card-title">Imkercursus</h5>
+          <p class="card-text">Leer alles over het houden van bijen.</p>
+        </div>
+        <div class="card-details">
+          <p><strong>Details:</strong> Een les van 3 uur onder begeleiding van een ervaren imker.</p>
+          <p><strong>Prijs:</strong> €49,99 per les</p>
+        </div>
+      </div>
+
+      <!-- 🐝 Extra productkaarten kunnen hier worden toegevoegd -->
+      <!--
+    <div class="card" onclick="toggleDetails(this)"> 
+      <img src="jouw-afbeelding-4.jpg" class="card-img-top" alt="Nieuw product">
+      <div class="card-body">
+        <h5 class="card-title">Nieuw product</h5>
+        <p class="card-text">Korte beschrijving.</p>
+      </div>
+      <div class="card-details">
+        <p><strong>Details:</strong> Gedetailleerde info hier.</p>
+        <p><strong>Prijs:</strong> €X,XX</p>
+      </div>
+    </div>
+    -->
+
+    </div>
+  </div>
+
+  <!-- footer onderaan de pagina -->
+  <footer>
+    &copy; 2025 ImkerDemo. Alle rechten voorbehouden.
+  </footer>
+
+  <!-- JavaScript om de details van producten te tonen/verbergen -->
+  <script>
+    function toggleDetails(card) {
+      const details = card.querySelector('.card-details');
+      details.classList.toggle('open');
+    }
+  </script>
+
+</body>
+
+</html>

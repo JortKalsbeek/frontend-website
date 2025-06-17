@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive voor mobiele apparaten -->
+  <meta name="description" content="Een veeteelt bedrijf dat focust op bijen."> <!-- Beschrijving voor zoekmachines -->
+  <meta name="keywords" content="Bijen, honing, weilanden, bijennestn, volwassenen, imkers.">
+  <!-- Zoekwoorden voor SEO -->
+  <meta name="author" content="imkerij"> <!-- Auteur van de site -->
+  <title>Welkom bij de imkerapp</title> <!-- Titel van de pagina -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="landingpag.css"> <!-- Externe CSS voor deze pagina -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light position-relative" style="background-color: #ffcd01;">
+    <!-- Bootstrap navbar met gele achtergrond -->
+    <div class="container position-relative w-100"> <!-- Container voor uitlijning -->
+
+      <!-- Logo gecentreerd -->
+      <a class="navbar-brand mx-auto position-absolute top-50 start-50 translate-middle" href="#">
+        <!-- Logo exact in het midden -->
+        <img src="assets/bijenlogo.webp" alt="Logo" width="50" height="50"> <!-- Afbeelding van het logo -->
+      </a>
+
+      <!-- Toggler rechts voor mobiel -->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation"> <!-- Mobiele uitklapknop rechts -->
+        <span class="navbar-toggler-icon"></span> <!-- Hamburger-icoon -->
+      </button>
+
+      <!-- Navigatielinks rechts -->
+      <div class="collapse navbar-collapse justify-content-end" id="nav"> <!-- Navigatie-items rechts uitgelijnd -->
+        <ul class="navbar-nav"> <!-- Navigatielijst -->
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <!-- Actieve link naar de startpagina -->
+          <li class="nav-item"><a class="nav-link" href="overzichtpagina.html">Producten</a></li>
+          <!-- Link naar productoverzicht -->
+          <li class="nav-item"><a class="nav-link" href="contactformulier.html">Contact</a></li>
+          <!-- Link naar contactpagina -->
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero / Welkomstblok -->
+  <div class="container"> <!-- Bootstrap container -->
+    <div class="jumbotron jumbotron-met-achtergrond text-center"> <!-- Grote intro-sectie met achtergrondafbeelding -->
+      <div class="overlay"></div> <!-- Eventuele overlay voor styling -->
+      <div class="content"> <!-- Inhoud van de hero -->
+        <h1 class="display-4">Welkom bij de imkerapp</h1> <!-- Grote titel -->
+        <p class="lead">Pure honing uit eigen bijenkasten, met liefde geoogst en duurzaam geproduceerd.</p>
+        <!-- Introductietekst -->
+        <a class="btn btn-honing" href="overzichtpagina.html">Bekijk onze producten</a>
+        <!-- Knop naar productenpagina / overzichtpagina -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container"> <!-- Tweede container -->
+    <div class="jumbotron text-center"> <!-- Jumbotron met tekst -->
+      <h3>Ik ben imker Johan Losser van imkerij De Bijenkorf</h3><br> <!-- Intro over de imker -->
+      <h3>Mijn visie is om de samenleving ervan bewust te maken hoe belangrijk de kleine bijtjes zijn voor het milieu.
+      </h3> <br> <!-- Visie van de imker -->
+      <h3>Dit doen wij door heerlijk smakende en ruikende producten te verkopen die iedereen kan kopen!!! </h3>
+      <!-- Doel van de imkerij -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 ImkerDemo. Alle rechten voorbehouden. <!-- footer met copyright -->
+  </footer>
+
+  <!-- Bootstrap en jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> <!-- jQuery voor Bootstrap -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script> <!-- Popper.js voor dropdowns en tooltips -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script> <!-- Bootstrap JavaScript-functionaliteit -->
+
+</body>
+
+</html>

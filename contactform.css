@@ -1,0 +1,87 @@
+    :root {
+      --honinggeel: #f4c542;
+      --donkergeel: #e0a800;
+      --beige: #fff9e6;
+      --accentgroen: #a4c639;
+      --tekstkleur: #444;
+    }
+
+    body::before {
+    content: "";
+    background-image: url("assets/achtergrondgraten.webp");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--beige);
+      color: var(--tekstkleur);
+    }
+
+    .navbar {
+      background-color: var(--honinggeel);
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      color: #333 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: var(--accentgroen) !important;
+    }
+
+    .container-contact {
+      max-width: 960px;
+      margin: 3rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .contact-info h2 {
+      color: var(--accentgroen);
+    }
+
+    form label {
+      font-weight: 600;
+    }
+
+    form input,
+    form textarea {
+      border-radius: 8px;
+      resize: none;
+    }
+
+    form button {
+      background-color: var(--donkergeel);
+      color: #e0a800;
+      font-weight: bold;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: var(--accentgroen);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #484848;
+      margin-top: 3rem;
+    }
