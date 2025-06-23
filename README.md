@@ -1,1 +1,1 @@
-Een link voor een GitHub page site https://jortkalsbeek.github.io/frontend-website/
+Een link voor de GitHub page site https://jortkalsbeek.github.io/frontend-website/
